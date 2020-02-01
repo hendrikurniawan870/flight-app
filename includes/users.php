@@ -34,7 +34,7 @@ Flight::route( 'GET /users/delete/@username', function($username){
 Flight::route( 'GET /users(/page/@page: [0-9]+)', function($page){
 	 Flight::view()->set('title', 'Users');
 
-	 if (empety($page) ) {
+	 if (empty($page) ) {
 	 	$page = 1;
 	
 	 }
